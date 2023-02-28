@@ -1,4 +1,4 @@
-<h1 align="center">«Rock, Scissors, Paper✊-✌-✋ Game»</h1>
+<h1 align="center">«✊-✌-✋ Game»</h1>
 
 <div align="center"><img src="img/readme.jpg"/></div>
 
