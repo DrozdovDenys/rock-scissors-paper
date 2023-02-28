@@ -12,6 +12,8 @@
 + JavaScript
 + Webpack 
 
+<h2>Description</h2>
+
 1. Interface:
    - On the page, you should show game rules and heading.
    - After there should be three buttons - Rock, Paper, or Scissors..
