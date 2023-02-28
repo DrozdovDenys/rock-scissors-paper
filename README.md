@@ -5,15 +5,6 @@
 <h2>Descripion</h2>
  Implemented the famous kid game 'Rock, Scissors, Paper'.
 
-<h2>Technologies</h2>
-
-+ HTML
-+ SCSS
-+ JavaScript
-+ Webpack 
-
-<h2>Description</h2>
-
 1. Interface:
    - On the page, you should show game rules and heading.
    - After there should be three buttons - Rock, Paper, or Scissors..
@@ -26,5 +17,12 @@
       + “Round 2, Rock vs. Paper, You’ve LOST!”.
    - And after three wins or three losses, you should show the final result who is the winner.
    - Pressing reset button should clear game data and previous results on the page.
+
+<h2>Technologies</h2>
+
++ HTML
++ SCSS
++ JavaScript
++ Webpack 
 
 <h3 align="center"><a href="https://drozdovdenys.github.io/rock-scissors-paper/">SEE LIVE</a></h3>
