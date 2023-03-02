@@ -14,7 +14,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -341,16 +341,15 @@ textarea {
   padding: 0.2em 0;
 }
 
-html {
-  height: 100%;
-  background: #00416a; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #ffe000, #799f0c, #00416a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
   padding: 20px;
 }
 .wrapper ul {
+  width: 60%;
+  margin: 0 auto;
   padding: 10px 20px;
   font-size: 24px;
   list-style-type: square;
@@ -372,21 +371,27 @@ html {
 }
 .wrapper .selections {
   font-size: 5rem;
-  margin-top: 5rem;
   display: flex;
-  justify-content: center;
+  max-width: 500px;
+  margin: 20px auto;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 10px;
 }
 .wrapper .selections .selection {
+  width: 24%;
   transition: 100ms;
+  text-align: center;
+  border: 2px solid;
 }
 .wrapper .selections .selection:not(:last-child):hover {
   transform: scale(1.2);
 }
 .wrapper .selections .reset {
   transition: 100ms;
+  text-align: center;
+  width: 24%;
 }
 .wrapper .selections .reset:hover {
   transform: scale(1.2);
@@ -442,7 +447,10 @@ html {
   }
   .wrapper .selection,
   .wrapper .reset {
-    font-size: 10vw;
+    font-size: 3rem;
+  }
+  .wrapper ul {
+    width: 75%;
   }
 }
 @media screen and (max-width: 425px) {
@@ -452,15 +460,11 @@ html {
   .wrapper h2 {
     font-size: 30px;
   }
-  .wrapper .selection,
-  .wrapper .reset {
-    font-size: 10vw;
-  }
-  .wrapper .selections {
-    margin-top: 3rem;
-  }
   .wrapper .result {
     font-size: 30px;
+  }
+  .wrapper .selections {
+    gap: 0.7rem;
   }
   .wrapper .result-selection.winner {
     font-size: 2.5rem;
