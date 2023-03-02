@@ -341,8 +341,19 @@ textarea {
   padding: 0.2em 0;
 }
 
+html {
+  height: 100%;
+  background: #00416a; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ffe000, #799f0c, #00416a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .wrapper {
   padding: 20px;
+}
+.wrapper ul {
+  padding: 10px 20px;
+  font-size: 24px;
+  list-style-type: square;
 }
 .wrapper h1 {
   font-size: 5rem;
@@ -400,6 +411,10 @@ textarea {
   opacity: 1;
   font-size: 3.5rem;
 }
+.wrapper button {
+  background: #5433ff; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #a5fecb, #20bdff, #5433ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 .round-info {
   text-align: center;
@@ -416,4 +431,41 @@ textarea {
 
 .lost {
   color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper h1 {
+    font-size: 60px;
+  }
+  .wrapper h2 {
+    font-size: 40px;
+  }
+  .wrapper .selection,
+  .wrapper .reset {
+    font-size: 10vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .wrapper h1 {
+    font-size: 40px;
+  }
+  .wrapper h2 {
+    font-size: 30px;
+  }
+  .wrapper .selection,
+  .wrapper .reset {
+    font-size: 10vw;
+  }
+  .wrapper .selections {
+    margin-top: 3rem;
+  }
+  .wrapper .result {
+    font-size: 30px;
+  }
+  .wrapper .result-selection.winner {
+    font-size: 2.5rem;
+  }
+  .wrapper ul {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
